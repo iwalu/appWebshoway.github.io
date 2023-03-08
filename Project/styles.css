@@ -30,6 +30,7 @@ body {
   flex-basis: 0;
   flex-grow: 4;
   height: 100%;
+ 
 }
 
 #floating-panel {
@@ -84,5 +85,16 @@ body {
 }
 #sidebar > div {
   padding: 0.5rem;
+}
+
+@media all and (max-width: 1200px) {
+  
+  #map {
+    display: block;
+    width: 90vw;
+    max-width:  1200px;
+    max-height: 100%;
+  }
+
 }
 
