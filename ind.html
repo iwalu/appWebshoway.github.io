@@ -8,7 +8,6 @@
   <head>
     <title>Displaying Text Directions With setPanel()</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="index.js"></script>
     <!-- jsFiddle will insert css and js -->
@@ -18,8 +17,7 @@
       <strong id="destText">Destination:</strong>
       <select id="end">
         <option value="">Selectionner une destination</option>
-
-        <option value="Festival des Glaces, Cotonou">Festival des Glaces, Cotonou</option>
+        <option value="Festival des Glaces, CotonouD">Festival des Glaces, Cotonou</option>
         <option value="L'Africaine Vie Bénin, Cotonou">AAVIE</option>
         <option value="Dreamxr, Cotonou">Dreamxr, Cotonou</option>
         <option value="Pharmacie Segbeya, Rue 1254, Cotonou">Pharmacie Segbeya, Cotonou</option>
@@ -34,7 +32,6 @@
         <option value="C8CR+282, Godomey">FASEG</option>
         <option value="C8CR+282, Godomey">FASEG</option>
         <option value="06 BP 2545 AGBLANGANDAN, Porto-Novo">CEG AGBLANGANDAN</option>
-
       </select>
       <button id="startWa" style="display: none;" onclick="startWalkings()">Démarrer la navigation</button>
       <button id="stopWa" style="display: none;" onclick="stopWalkings()">Arreter la navigation</button>
@@ -48,18 +45,12 @@
         
       </div>
       <div id="sidebar">
-      </div>                                          
+      </div>
     </div>
     
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
-  ></script>
-
-  <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-  defer
-></script>
-    
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
+    ></script>
   </body>
 </html>
         <!-- <strong>End:</strong>
@@ -101,12 +92,9 @@
      and consistent behavior across browsers, consider loading using Promises
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
-     <!--<script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6g2MiKuQ9fOOkwEnrXWawtPwlUyuMKRs&callback=initMap&v=weekly"
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
-    ></script> 
-    
-   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"></script> 
-
+    ></script>
   </body>
-</html>-->
+</html>
