@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>StickyMobile BootStrap</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+
+</head>
+    
+<body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="page-event-home.html" class="header-title">SHOWAY</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-arrow-left"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4"><i class="fas fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="footer-bar" class="footer-bar-1">
+        <a href="page-event-home.html"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="page-content-bookmarks.html"><i class="fa fa-star"></i><span>Features</span></a>
+        <!--<a href="index-pages.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>-->
+        <!--<a href="index-search.html"><i class="fa fa-search"></i><span>Search</span></a>-->
+        <!--<a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>-->
+    </div>
+
+
+    <div class="card card-styl ">                              
+        <div class="content">
+            <div class="d-flex pb-2">
+                <div class="align-self-center pe-3">
+                    <a href="#" class="icon icon-xs gradient-blue shadow-xl rounded-m"><i class="fa fa-map-marker-alt color-white"></i></a>
+                </div>
+                <div class="align-self-center">
+                    <!--<p class="mb-n2 mt-n1 font-700 font-10 text-uppercase opacity-60 ">Position Actuelle</p>-->
+                    <h2 class="font-700 mb-0">UAC Calavi</h2>
+                </div>
+                <!-- style="width: 18rem;"  card-style
+                <div class="align-self-center ms-auto">
+                    <a href="#" data-toggle-theme class="show-on-theme-dark icon icon-xs gradient-yellow rounded-m"><i class="fa fa-lightbulb font-14 color-white"></i></a>
+                    <a href="#" data-toggle-theme class="show-on-theme-light icon icon-xs gradient-dark rounded-m"><i class="fa fa-moon font-14 color-white"></i></a>
+                </div>
+                <div class="align-self-center ms-2">
+                    <a href="#" data-menu="menu-share" class="icon icon-xs gradient-blue rounded-m"><i class="fa fa-share-alt font-12 color-white"></i></a>
+                </div>-->
+            </div>
+             
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="d-flex pb-2 card-styl">
+            <div class="align-self-center card-styl">
+                <h3 class=" font-700 mb-0 card-styl">
+                    Ou souhaitez-vous vous rendre aujourd’hui sur le campus ?
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-flex pb-2 card-styl ">
+        <div class="align-self-center card-styl">
+            <h5 class="text-uppercase font-700 px-3 font-14 ">Populaire</h5>
+        </div>
+        <div class="align-self-center ms-auto card-styl ">
+            <a href="#" class="font-12 card-styl">Tout voir</a>
+        </div>
+    </div>
+
+    <style>
+        *, *::after, *::before {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            width: 100%;
+        }
+    
+        input[type="radio"] {
+            appearance: none;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 992px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .custom-card {
+            background-image: url('./images/pictures/34g.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 350px;
+            display: inline-block;
+
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* cursor: pointer; */
+        }
+
+        .custom-card a {
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .custom-card-content {
+            /* background-color: #fff; */
+            padding: .5rem 1rem;
+            max-width: 85%;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .custom-card-content::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+            background-color: #fff;
+            border-radius: 15px;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+<body>
+    <main style="max-width: 90%; margin: 0 auto;">
+        <form action="">
+            <div class="custom-card">
+                <input type="radio" name="ending" id="epac" value="Kaftia Co Sarl, Cotonou">
+                
+                <label for="epac">
+                    <a href="./ind.html">
+                    <section class="custom-card-content">
+                        <h1>Ecole Polytechnique</h1>
+                        <p>10 minutes de marche à pied</p>
+                    </section>
+                </a>
+                </label>
+            </div>
+            <div class="custom-card">
+                <input type="radio" name="ending" id="Kaftia Co Sarl" value="Kaftia Co Sarl, Cotonou">
+                
+                <label for="Kaftia Co Sarl">
+                    <a href="./ind.html">
+                    <section class="custom-card-content">
+                        <h1>Ecole Polytechnique</h1>
+                        <p>10 minutes de marche à pied</p>
+                    </section>
+                </a>
+                </label>
+            </div>
+            <div class="custom-card">
+                <input type="radio" name="ending" id="agblangandan" value="Kaftia Co Sarl, Cotonou">
+                
+                <label for="agblangandan">
+                    <a href="./ind.html">
+                    <section class="custom-card-content">
+                        <h1>Ecole Polytechnique</h1>
+                        <p>10 minutes de marche à pied</p>
+                    </section>
+                </a>
+                </label>
+            </div>
+        </form>
+    </main>
+</body>
+
+<script type="text/javascript" src="scripts/index.js"></script>
+
+</html>
+
+<script>
+    const destinationInputs = document.getElementsByName('ending');
+
+    destinationInputs.forEach(dest => {
+        dest.addEventListener("change", function(event) {
+            let item = event.target.value;
+            console.log(item);
+            localStorage.setItem('destination', dest.value);
+        });
+    });
+</script>
+    
+    
+
+
+    <!--<div data-card-height="140" class="card card-style rounded-m shadow-xl bg-blue-light ">
+        <div class="card-center ms-3" >
+            <h2 class="color-white">Journée d'orientation </h2>
+            <p class="color-white font-10 opacity-70 mt-2 mb-n2"><i class="far fa-calendar"></i> 14 Aout <i class="ms-3 far fa-clock"></i> 09:00 </p>
+            <p class="color-white font-10 opacity-70 mb-0"><i class="fa fa-map-marker-alt"></i> Amphi Threatre </p>
+        </div>
+        <div class="card-center me-3">
+            <a href="#" class="float-end bg-white color-black btn btn-xs text-uppercase font-900 rounded-xl font-11">Rejoindre</a>
+        </div>
+        <div class="card-overlay  gradient-blue opacity-90"></div>
+    </div>
+
+
+    <div data-card-height="140" class="card card-style rounded-m shadow-xl bg-pink-light">
+        <div class="card-center ms-3">
+            <h2 class="color-white">Conference sur le droit numerique</h2>
+            <p class="color-white font-10 opacity-70 mt-2 mb-n2"><i class="far fa-calendar"></i> 24 Septembre <i class="ms-3 far fa-clock"></i> 13:00 </p>
+            <p class="color-white font-10 opacity-70 mb-0"><i class="fa fa-map-marker-alt"></i> Amphi Etisalat</p>
+        </div>
+        <div class="card-center me-3">
+            <a href="#" class="float-end bg-white color-black btn btn-xs text-uppercase font-900 rounded-xl font-11">Rejoindre</a>
+        </div></a>
+        </div>
+        <div class="card-overlay  opacity-90"></div>
+    </div>
+
+
+    <div data-card-height="140" class="card card-style rounded-m shadow-xl bg-green-light">
+        <div class="card-center ms-3">
+            <h2 class="color-white">Journée Culturelle </h2>
+            <p class="color-white font-10 opacity-70 mt-2 mb-n2"><i class="far fa-calendar"></i> 4 Decembre <i class="ms-3 far fa-clock"></i> 09:00 PM</p>
+            <p class="color-white font-10 opacity-70 mb-0"><i class="fa fa-map-marker-alt"></i> Amphi Etisalat </p>
+        </div>
+        <div class="card-center me-3">
+            <a href="#" class="float-end bg-white color-black btn btn-xs text-uppercase font-900 rounded-xl font-11">Rejoindre</a>
+        </div>
+        <div class="card-overlay gradient-green opacity-90"></div>
+    </div>-->
+    
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+</body>

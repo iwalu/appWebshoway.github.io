@@ -48,17 +48,35 @@ function initMap(lat,lng) {
 
   //map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 
+  calculateAndDisplayRoute(directionsService, directionsRenderer);
+
+
+
   const onChangeHandler = function () {
     calculateAndDisplayRoute(directionsService, directionsRenderer);
   };
   document.getElementById("end").addEventListener("change", onChangeHandler);
+
+  document.getElementsByName('ending').forEach(dest => {
+    dest.addEventListener("change", onChangeHandler);
+});
 }
+
+// const end = document.getElementsByName("ending").value;
+// console.log("end" + end)
+
+// window.onload = function() { 
+  const ending = localStorage.getItem('destination');
+  console.log(ending)
+// }
+
 
 function calculateAndDisplayRoute(directionsService, directionsRenderer) {
   document.getElementById("startWa").style.display = "block";
   const start = document.getElementById("lat").innerHTML+','+document.getElementById("long").innerHTML
   console.log(start);
-  const end = document.getElementById("end").value;
+  // const end = document.getElementById("end").value;
+  const end = ending;
 
   directionsService
     .route({
@@ -77,6 +95,7 @@ function calculateAndDisplayRoute(directionsService, directionsRenderer) {
     })
     .catch((e) => window.alert("Directions request failed due to " + e));
 }
+
 
 function calculateAndDisplayRouteLive(directionsService, directionsRenderer) {
   
