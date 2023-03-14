@@ -170,3 +170,23 @@ function showAR(distanceFromPointB)
 function openAR(){
   window.open("https://parisius.github.io", '_blank');
 }
+
+function getEndValue()
+{
+  Ends = [
+    "Festival des Glaces, CotonouD",
+    "L'Africaine Vie Bénin, Cotonou",
+    "Dreamxr, Cotonou", 
+    "Pharmacie Segbeya, Rue 1254, Cotonou",
+    "Centre de Santé de Zogbo, 99HQ+8HX, Rue 2723, Cotonou",
+    "Hotel De La Cite Houeyiho, Cotonou",
+    "Kaftia Co Sarl, Cotonou",
+    "Bon Voyage Hôtel, Cotonou",
+    "Ecole Polytechnique d'Abomey Calavi (EPAC), Godomey",
+    "C87R+RV3, Godomey",
+    "Ecole Polytechnique d'Abomey Calavi (EPAC), Godomey",
+    "C88R+F2 Godomey",
+    "C8CR+282, Godomey",
+    "06 BP 2545 AGBLANGANDAN, Porto-Novo"
+  ]
+}

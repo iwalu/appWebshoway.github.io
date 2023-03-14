@@ -17,21 +17,20 @@
       <strong id="destText">Destination:</strong>
       <select id="end">
         <option value="">Selectionner une destination</option>
-        <option value="Festival des Glaces, CotonouD">Festival des Glaces, Cotonou</option>
-        <option value="L'Africaine Vie Bénin, Cotonou">AAVIE</option>
-        <option value="Dreamxr, Cotonou">Dreamxr, Cotonou</option>
-        <option value="Pharmacie Segbeya, Rue 1254, Cotonou">Pharmacie Segbeya, Cotonou</option>
-        <option value="Centre de Santé de Zogbo, 99HQ+8HX, Rue 2723, Cotonou">Centre de Santé de Zogbo</option>
-        <option value="Hotel De La Cite Houeyiho, Cotonou">Hotel De La Cite Houeyiho</option>
-        <option value="Kaftia Co Sarl, Cotonou">Kaftia Co Sarl</option>
-        <option value="Bon Voyage Hôtel, Cotonou">Bon Voyage Hôtel</option>
-        <option value="Ecole Polytechnique d'Abomey Calavi (EPAC), Godomey">Rectorat UAC</option>
-        <option value="C87R+RV3, Godomey">EPAC UAC</option>
-        <option value="Ecole Polytechnique d'Abomey Calavi (EPAC), Godomey">IFRI UAC</option>
-        <option value="C88R+F2 Godomey">IFRI_UAC</option>
-        <option value="C8CR+282, Godomey">FASEG</option>
-        <option value="C8CR+282, Godomey">FASEG</option>
-        <option value="06 BP 2545 AGBLANGANDAN, Porto-Novo">CEG AGBLANGANDAN</option>
+        <option value="0">Festival des Glaces, Cotonou</option>
+        <option value="1">AAVIE</option>
+        <option value="2">Dreamxr, Cotonou</option>
+        <option value="3">Pharmacie Segbeya, Cotonou</option>
+        <option value="4">Centre de Santé de Zogbo</option>
+        <option value="5">Hotel De La Cite Houeyiho</option>
+        <option value="6">Kaftia Co Sarl</option>
+        <option value="7">Bon Voyage Hôtel</option>
+        <option value="8">Rectorat UAC</option>
+        <option value="9">EPAC UAC</option>
+        <option value="10">IFRI UAC</option>
+        <option value="11">IFRI_UAC</option>
+        <option value="12">FASEG</option>
+        <option value="13">CEG AGBLANGANDAN</option>
       </select>
       <button id="startWa" style="display: none;" onclick="startWalkings()">Démarrer la navigation</button>
       <button id="stopWa" style="display: none;" onclick="stopWalkings()">Arreter la navigation</button>
@@ -48,9 +47,9 @@
       </div>
     </div>
     
-    <script
+    <!-- <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
-    ></script>
+    ></script> -->
   
         <!-- <strong>End:</strong>
         <select id="start">
@@ -93,7 +92,7 @@
     -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
+      async defer
     ></script>
   </body>
 </html>
